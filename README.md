@@ -59,13 +59,86 @@ int myMethod(int x)
 float myMethod(float x)
 double myMethod(double x, double y)
 
+## Compilar e executar codigo
+javac filename.java
+java filename
 
-## Atributos de metodos e atributos
-public -> metodo que pode ser acessado somente pelo objeto
-static -> metodo que pode ser acessado somente pela classe
+## Construtor
+
+```java
+public class Main {
+  int x;  // Create a class attribute
+
+  // Create a class constructor for the Main class
+  public Main() {
+    x = 5;  // Set the initial value for the class attribute x
+  }
+
+  public static void main(String[] args) {
+    Main myObj = new Main(); // Create an object of class Main (This will call the constructor)
+    System.out.println(myObj.x); // Print the value of x
+  }
+}
+```
+
+## Modificadores de acesso
+
+- public
+  - metodo que pode ser acessado somente pelo objeto
+- static
+  - metodo que pode ser acessado pela classe
+  - variavel da classe em si e não do objeto, e o objeto pode modificar essa variavel da classe.
+
+## This
+
+O "this" é o mesmo que o do Javascript
+
+```java
+this.name = newName;
+```
+
+## Classes abstratas
+
+é o mesmo que as interfaces do typescript
+
+```java
+abstract class Main {
+  public String fname = "John";
+  public String lname = "Doe";
+  public String email = "john@doe.com";
+  public int age = 24;
+  public abstract void study(); // abstract method 
+}
+
+// Subclass (inherit from Person)
+class Student extends Main {
+  public int graduationYear = 2018;
+  public void study() {
+    System.out.println("Studying all day long");
+  }
+}
+```
 
 ## Como usar o Scanner para leitura do stdin
 
-## Bibliotecas inportantes
+é que nem a função "input()" do python. Soq melhor.
+
+```java
 import java.util.Scanner/
-*/
+Scanner myObj = new Scanner(System.in);
+tring userName = myObj.nextLine();
+```
+
+### Métodos do Scannner
+
+nextBoolean() 	Reads a boolean value from the user
+nextByte() 	    Reads a byte value from the user
+nextDouble()   	Reads a double value from the user
+nextFloat()   	Reads a float value from the user
+nextInt() 	    Reads a int value from the user
+nextLine() 	    Reads a String value from the user
+nextLong() 	    Reads a long value from the user
+nextShort() 	  Reads a short value from the user
+
+## Bibliotecas inportantes
+import java.util.Scanner
