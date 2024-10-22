@@ -144,3 +144,4 @@ nextShort() 	  Reads a short value from the user
 
 ## Bibliotecas inportantes
 import java.util.Scanner
+import java.util.*
