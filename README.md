@@ -18,15 +18,18 @@ final int numero = 2;
 
 ## numeros com ponto flutuante
 float myFloatNum = 5.99f;
+
 double myDoubleNum = 5.999999d;
 
 ## booleanos
 boolean verdadeiro = true;
+
 boolean falso = false;
 
 ## Casting em Java
 
 double myDouble = 9.78d;
+
 int myInt = (int) myDouble;
 
 ### Widening Casting (automatically) - converting a smaller type to a larger type size
@@ -57,13 +60,18 @@ System.out.println(myNumbers[1][2]); // Outputs 7
 
 With method overloading, multiple methods can have the same name with different parameters:
 
+```java
 int myMethod(int x)
 float myMethod(float x)
 double myMethod(double x, double y)
+```
 
 ## Compilar e executar codigo
+
+```sh
 javac filename.java
 java filename
+```
 
 ## Construtor
 
@@ -143,5 +151,8 @@ tring userName = myObj.nextLine();
 - nextShort() 	  Reads a short value from the user
 
 ## Bibliotecas inportantes
+
+```java
 import java.util.Scanner
 import java.util.*
+```
